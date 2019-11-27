@@ -1,0 +1,22 @@
+{
+  "manifest_version": 2,
+  "name": "TouchZoom",
+  "version": "1.0",//manditory, contains basic metadata
+
+  "description": "Finally, better touch zoom on Windows!",
+  "icons": {
+    "32": "icons/touchZoom-32.png",
+    "48": "icons/touchZoom-48.png",
+    "64": "icons/touchZoom-64.png",
+    "100":"icons/touchZoom-100.png"
+  },
+
+  "permissions": [
+    "*://*/*"
+  ],
+
+  "content_scripts":[{
+    "matches": ["*://*/*"],
+    "js":["/zoomMaker.js"]
+  }]
+}
